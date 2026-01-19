@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Techwave</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="./vanila.css">
 
 </head>
 
@@ -14,7 +15,7 @@
     <!-- Navbar -->
     <nav class="bg-[#1A0B2E]  text-white flex justify-between px-[200px] py-4">
         <div>
-            <h1 class="text-4xl">Tech<span
+            <h1 class="text-4xl font-extrabold">Tech<span
                     class="text-transparent bg-clip-text bg-linear-to-r from-[#F7E93F] via-[#FB09B4] to-[#9100F8]">Wave</span>
             </h1>
         </div>
@@ -25,13 +26,37 @@
             <div>Host</div>
         </div>
 
-        <button class="px-4 py-3 bg-linear-to-r from-[#F7E93F] via-[#FB09B4] to-[#9100F8] rounded-2xl">
+        <button class="px-7 py-2 bg-linear-to-r from-[#F7E93F] via-[#FB09B4] to-[#9100F8] rounded-2xl">
             Subscribe
         </button>
     </nav>
     <hr class="border-[#412567]">
 
-    
+    <!-- banner -->
+    <main
+        class="h-screen bg-[url('/assets/hero-bg.png')] bg-cover bg-center bg-no-repeat flex flex-col  justify-center ">
+
+
+        <div class="justify-items-center text-white gap-10">
+
+            <img src="./assets/microphone.png" alt="">
+            <h1 class="font-extrabold text-6xl">TechWave</h1>
+            <p class="font-normal opacity-80 mt-3">Your daily dose of tech insights,
+                productivity hacks, and personal
+                growth</p>
+
+        </div>
+
+
+        <div class="flex justify-center gap-4 mt-3">
+            <button
+                class="p-2 bg-linear-to-r from-[#F7E93F] via-[#FB09B4] to-[#9100F8] rounded-2xl font-semibold text-white text-[16px]">Listen
+                on Spotify</button>
+
+            <button class="text-[#00ff88] p-2 border-2 rounded-2xl">Subscribe</button>
+        </div>
+
+    </main>
 
 
 
