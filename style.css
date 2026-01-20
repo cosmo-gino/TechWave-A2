@@ -1,1 +1,14 @@
-@import "tailwindcss"
+
+
+@import "tailwindcss";
+
+
+body {
+    font-family: "Inter", sans-serif;
+}
+
+.container{
+ width: 100%;
+ max-width: 75rem;
+ padding-inline: 1rem;
+}

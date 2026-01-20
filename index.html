@@ -6,21 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Techwave</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
 
 </head>
 
 
-<body class=" text-white">
+<body class="bg-[#1A0B2E]  text-white">
     <!-- Navbar -->
-    <nav class="bg-[#1A0B2E]  flex justify-between px-[200px] py-4">
+    <nav class="bg-[#1A0B2E]  flex justify-between mx-auto container py-4 ">
         <div>
             <h1 class="text-4xl font-extrabold">Tech<span
                     class="text-transparent bg-clip-text bg-linear-to-r from-[#F7E93F] via-[#FB09B4] to-[#9100F8]">Wave</span>
             </h1>
         </div>
 
-        <div class="flex gap-8">
+        <div class=" gap-8  hidden md:flex ">
             <div>About</div>
             <div>Episodes</div>
             <div>Host</div>
@@ -41,7 +46,7 @@
     <main
         class=" h-screen bg-[url('./assets/hero-bg.png')] bg-cover bg-center bg-no-repeat flex flex-col  justify-center ">
 
-        <div class=" flex flex-col justify-center items-center gap-10">
+        <div class=" flex flex-col justify-center items-center gap-10  mx-auto container">
             <div
                 class="justify-center flex bg-[url('./assets/hero-circle.png')] bg-cover bg-center bg-no-repeat w-[450px] h-[450px] rounded-full p-[125px] relative">
                 <img src="./assets/microphone.png" alt="">
@@ -53,7 +58,7 @@
 
             <div class="flex flex-col justify-center items-center gap-4">
                 <h1 class="font-extrabold text-6xl">TechWave</h1>
-                <p class="font-normal opacity-80 mt-3">Your daily dose of tech insights,
+                <p class=" text-center font-normal opacity-80 mt-3">Your daily dose of tech insights,
                     productivity hacks, and personal
                     growth</p>
 
@@ -78,7 +83,7 @@
     </main>
 
     <!-- About the Podcast -->
-    <section class="bg-[#190c2f] px-[200px] pt-[50px] pb-32 text-center">
+    <section class="   bg-[#190c2f]  pt-[50px] pb-32 text-center mx-auto container">
         <div class="justify-items-center pb-20">
             <h1 class="font-bold text-[48px]">
                 About the Podcast
@@ -93,7 +98,7 @@
         </div>
         <hr class="border-[#412567]">
 
-        <div class="grid grid-flow-row grid-cols-4 gap-4 pt-20 justify-items-center">
+        <div class=" pt-10 grid grid-cols-2  md:grid-cols-4   gap-4 ">
             <div>
                 <h1 class="text-[#00FF88] text-5xl font-extrabold">150K+</h1>
                 <p class="uppercase pt-5">Monthly Listeners</p>
@@ -116,10 +121,10 @@
     </section>
 
     <!-- Why Choose TechWave -->
-    <section class="py-[120px] px-[200px] bg-[#1a0b2e] text-white">
+    <section class=" bg-[#1a0b2e] text-white mx-auto container">
         <!-- max-w-6xl mx-auto  -->
         <div class="max-w-6xl mx-auto px-6 justify-items-center">
-            <h2 class="text-5xl font-bold mb-10">Why Choose TechWave</h2>
+            <h2 class="text-center text-4xl md:text-5xl font-bold mb-10">Why Choose TechWave</h2>
             <!-- grid-start -->
             <div class=" grid grid-cols-1 md:grid-cols-3 gap-6 text-left">
                 <!-- card -->
@@ -166,22 +171,23 @@
     </section>
 
     <!-- Featured Episodes -->
-    <section class="bg-[#1a0b2e] text-white px-[200px] py-[120px] justify-items-center gap-10">
-        <div>
-            <div class="flex justify-center">
-                <h1 class="font-bold text-5xl mb-10 ">Featured Episodes</h1>
-            </div>
-            <!-- cards -->
-            <div class="flex flex-row gap-8 text-left">
-                <div class=" space-y-4  bg-[#250d44] rounded-4xl">
+    <section class="bg-[#1a0b2e] text-white mt-28 ">
+        <div class=" container mx-auto">
 
-                    <iframe width="480" height="250" class="rounded-t-4xl"
+            
+                <h1 class="font-bold text-5xl text-center mb-3 ">Featured Episodes</h1>
+
+            <!-- cards -->
+            <div class=" gap-8 text-left grid grid-cols-1 md:grid-cols-2 py-3  lg:grid-cols-3  ">
+                <div class=" bg-[#250d44] rounded-3xl overflow-hidden flex flex-col ">
+
+                    <iframe class="w-full aspect-video "
                         src="https://www.youtube.com/embed/KKNCiRWd_j0?si=WyiL7PhOXSt1hJBW&amp;controls=0"
                         title="YouTube video player" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-                    <div class=" p-5">
+                    <div class="  p-5">
                         <h1 class="font-bold text-2xl">
                             The Future of AI in Everyday Life
                         </h1>
@@ -200,9 +206,9 @@
 
                 </div>
                 <!-- C1.1 -->
-                <div class=" space-y-4  bg-[#250d44] rounded-4xl">
+                <div class=" bg-[#250d44] rounded-3xl overflow-hidden flex flex-col">
 
-                    <iframe width="480" height="250" class="rounded-t-4xl"
+                    <iframe class="w-full aspect-video"
                         src="https://www.youtube.com/embed/PLBYYdg0sfs?si=pLhsaYnsHaeK3VrO" title="YouTube video player"
                         frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -226,9 +232,9 @@
 
                 </div>
                 <!-- C1.2 -->
-                <div class=" space-y-4  bg-[#250d44] rounded-4xl">
+                <div class="  bg-[#250d44] rounded-3xl overflow-hidden flex flex-col">
 
-                    <iframe width="480" height="250" class="rounded-t-4xl"
+                    <iframe class="w-full aspect-video"
                         src="https://www.youtube.com/embed/3GU7nAuchKA?si=fmp1KJFoeLdQc4by" title="YouTube video player"
                         frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -252,52 +258,29 @@
 
                 </div>
 
-                <!-- C1 -->
-                <!-- <div class=" py-12 px-6 bg-[#250d44]">
-
-
-                    <h1 class="font-bold text-2xl">
-                        Building Better Habits for Remote Work
-                    </h1>
-                    <p class="font-normal text-[16px]  opacity-60">
-                        Practical strategies for staying productive and maintaining work-life balance in a remote
-                        environment.
-                    </p>
-                </div> -->
-
-                <!-- C2 -->
-                <!-- <div class=" py-12 px-6 bg-[#250d44]">
-
-
-
-                    <h1 class="font-bold text-2xl">
-                        Career Growth in Tech: A Roadmap
-                    </h1>
-                    <p class="font-normal text-[16px] opacity-60">
-                        Expert advice on navigating your tech career from junior developer to senior leadership roles.
-                    </p>
-                </div> -->
-
             </div>
-
         </div>
+    </section>
 
-        <!-- Meet the Host -->
-        <div class=" justify-items-center">
-            <h1 class="mt-[120px] font-bold text-5xl">Meet the Host</h1>
+    <!-- Meet the Host -->
+    <section>
+        <div class=" mb-20 mx-auto  container ">
+            <h1 class="mt-[120px] font-bold text-5xl text-center">Meet the Host</h1>
 
-            <div class="p-10  bg-[#250d44] flex justify-between mt-10 rounded-3xl  gap-6 ">
+            <div
+                class="bg-[#250d44]  mx-auto  mt-10 rounded-3xl  gap-6 flex items-center p-8 flex-col md:flex-row text-center md:text-left ">
                 <div class=""><img src="./assets/host.png" alt=""></div>
-                <div class=" gap-4 flex flex-col">
+                <div class=" gap-4 ">
                     <h1 class="font-bold text-3xl">Alex Kumar</h1>
-                    <p class="font-normal text-[16px] opacity-60">Tech entrepreneur, productivity expert, and lifelong
+                    <p class="font-normal text-[16px] mb-6 opacity-60">Tech entrepreneur, productivity expert, and
+                        lifelong
                         learner. Alex has been in the tech industry
                         for over 10 years,<br>working with startups and Fortune 500 companies. Through TechWave, Alex
                         shares insights from industry leaders and <br>practical advice for anyone looking to grow in
                         tech.
                     </p>
 
-                    <div>
+                    <div class="justify-items-center md:justify-items-start mt-7">
                         <ul class=" flex gap-3">
                             <li><img src="./assets/linkedin.png" class=" " alt=""></li>
                             <li><img src="./assets/x.png" alt=""></li>
@@ -311,16 +294,16 @@
             </div>
     </section>
 
-    <footer class=" bg-[url('./assets/footer-bg.png')] bg-no-repeat bg-cover bg-center">
+    <footer class=" py-20 bg-[url('./assets/footer-bg.png')] bg-no-repeat bg-cover bg-center  hidden">
 
-        <div class=" justify-items-center p-32">
+        <div class=" mx-auto container  justify-items-center ">
             <div class="">
                 <h1 class="text-7xl font-extrabold">Tech<span
                         class="text-transparent bg-clip-text bg-linear-to-r from-[#F7E93F] via-[#FB09B4] to-[#9100F8]">Wave</span>
                 </h1>
             </div>
 
-            <div class="flex gap-14 mt-8 mb-8">
+            <div class=" justify-center  items-center text-center  flex-wrap flex gap-14 mt-8 mb-8">
 
                 <div class="flex items-center justify-center gap-2 font-medium text-[16px]">
                     <img src="./assets/spotify.png" alt="">
